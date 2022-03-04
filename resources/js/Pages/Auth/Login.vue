@@ -27,7 +27,7 @@ const submit = () => {
 
 <template>
     <BreezeGuestLayout>
-        <Head title="Log in" />
+        <Head :title="'Log In'" />
 
         <BreezeValidationErrors class="mb-4" />
 
@@ -63,5 +63,11 @@ const submit = () => {
                 </BreezeButton>
             </div>
         </form>
+
+        <div class="mt-3">
+            <Link :href="route('register')" class="text-lg text-gray-600 hover:text-gray-900">
+                Register
+            </Link>
+        </div>
     </BreezeGuestLayout>
 </template>
